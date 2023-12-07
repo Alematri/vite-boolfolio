@@ -1,0 +1,31 @@
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/900.css';
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.main-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 100vh;
+}
+
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid white;
+  border-radius: 10px;
+  max-height: 90vh;
+  overflow: auto;
+}
