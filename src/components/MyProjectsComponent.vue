@@ -22,7 +22,7 @@ import { store } from '../data/store';
       <router-link :to="{name: 'ProjectDetail', params:{slug: project.slug}}"  class="title">{{ project.title }}</router-link>
       <div>
         <em>{{ project.technology?.name }}</em>
-        <strong v-for="tag in project.tags" :key="tag.id" >{{ tag.name }}</strong>
+        <strong v-for="type in project.types" :key="type.id"> {{ type.name }} </strong>
       </div>
     </li>
   </ul>

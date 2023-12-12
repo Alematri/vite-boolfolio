@@ -33,8 +33,8 @@ import Loader from '../components/partials/Loader.vue'
       this.getproject(this.$route.params.slug);
     },
     computed: {
-      tagsList(){
-        return this.project.tags?.map(tag => tag.name).join(', ') || 'NO TAG';
+      typesList(){
+        return this.project.types?.map(type => type.name).join(', ') || 'NO type';
       },
       formattedDate(){
         const d = new Date(this.project.date);
@@ -57,7 +57,7 @@ import Loader from '../components/partials/Loader.vue'
   <div v-else>
     <h1>{{ project.title }}</h1>
     <em>{{ formattedDate }}</em>
-    <p>Teconologia: {{ project.technology?.name || ' NO TECHNOLOGY '  }} | Tag: {{ tagsList }}</p>
+    <p>Teconologia: {{ project.technology?.name || ' NO TECHNOLOGY '  }} | type: {{ typesList }}</p>
     <div>FOTO</div>
     <em>Nome Foto</em>
     <p>{{ project.text }}</p>
